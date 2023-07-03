@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+
+    <nav id="navbar">
+        <a href="./user.html" class="buttons">User</a>
+        <a href="./admin.html" class="buttons">Admin</a>
+    </nav>
+
+    <div id="userForm">
+        <form action="#" id="userFORM">
+            <input type="text" placeholder="Enter your Name" id="userName" class="userdata" required>
+            <input type="number" placeholder="Enter your Age" id="userAge" class="userdata" required>
+            <input type="text" placeholder="Enter your Place" id="userPlace" class="userdata" required>
+            <select name="Batch" id="selectBatch">Select Batch
+                <option value="">Select Batch</option>
+                <option value="web13">WEB-13</option required>
+                <option value="web14">WEB-14</option required>
+                <option value="web15">WEB-15</option required>
+            </select required>
+            <select name="Profession" id="selectProfession">Select Batch
+                <option value="">Select Profession</option>
+                <option value="FSD">FSD</option required>
+                <option value="frontend">Frontend</option required>
+                <option value="backend">Backend</option required>
+            </select required>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+<script src="./scripts/user.js"></script>
+</html>

@@ -4,12 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
     <nav id="navbar">
-        <a href="./user.html" class="buttons">Login Page</a>
-        <h1 onclick="verify()" id="dataPage" class="buttons">Data Page</h1>
-        <h1 onclick="verify()" id="reportsPage" class="buttons">Reports Page</h1>
+        <a href="./user.html" class="buttons">Login</a>
+        <h1 onclick="verify()" id="dataPage" class="buttons">Data</h1>
+        <h1 onclick="verify()" id="reportsPage" class="buttons">Reports</h1>
     </nav>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Place</th>
+                <th>Batch</th>
+                <th>Profession</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Append All the data -->
+        </tbody>
+    </table>
+
+    <h4>Total number of guest Attending :<span id="totalGuest"></span></h4>
+    <h4>Number Of Student Attending : <span id="numberOfStudent"></span></h4>
+    <h4>Number Of Working Professional Attending : <span id="workingProfessional"></span></h4>
+    <h4>Average age of people attending : <span id="averageAge"></span></h4>
 </body>
+<script src="./scripts/reports.js"></script>
+<script src="./scripts/verfy.js"></script>
 </html>

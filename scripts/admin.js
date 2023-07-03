@@ -21,9 +21,9 @@ async function login(){
         body:JSON.stringify(obj)
     })
 
-    let data = await res.json()
-    if(data){
-        sessionStorage.setItem("token",data.token)
+    let data2 = await res.json()
+    if(data2){
+        sessionStorage.setItem("token",data2.token)
         alert("Successfully Login")
         window.location.href = "data.html"
     }else{
